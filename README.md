@@ -194,7 +194,7 @@ run `sudo -l`. The output should be like this:
   - Create a new directory called `~/.ssh` (`mkdir .ssh`)
   - Run `sudo nano ~/.ssh/authorized_keys` and paste the content into this file, save and exit
   - Give the permissions: `chmod 700 .ssh` and `chmod 644 .ssh/authorized_keys`
-  - Check in `/etc/ssh/sshd_config` file if `PasswordAuthentication` is set to `no` and `PermitRootLogin` is set to `prohibit-password`.
+  - Check in `/etc/ssh/sshd_config` file if `PasswordAuthentication` is set to `no` and `PermitRootLogin` is set to `no`.<!--edited after firt review-->
   - Restart SSH: `sudo service ssh restart`
   - Run `exit` to return to user `ubuntu`.
   - run: `ssh -i ~/.ssh/grader_key -p 2200 grader@52.59.211.111`.
